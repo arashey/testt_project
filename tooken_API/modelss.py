@@ -19,6 +19,6 @@ username_to_add = 'arash'
 if User.get_or_none(User.username == username_to_add) is None:
     hashed_password = hash_password('1234')
     User.create(username=username_to_add, password=hashed_password)
-    print(f'User {username_to_add} created.')
+    print(f'User {username_to_add} created')
 else:
-    print(f'User {username_to_add} already exists.')
+    print(f'User {username_to_add} already exists')
